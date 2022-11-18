@@ -33,16 +33,27 @@ const Home = () => {
         bgPosition="center"
       ></GridItem>
       <GridItem rowSpan={2} colSpan={2} p="4">
-        <Flex>
-          <Conocimientos w="25%" />
+        <Flex
+          direction={['column', null, null, null, 'row']}
+          justify="center"
+          alignItems="center"
+        >
+          <Conocimientos w={['80%', '25%']} />
 
-          <Box p="4" w="45%">
+          <Box p="4" w={['80%', null, null, null, '45%']}>
             <Badge colorScheme="purple" as={RouterLink} to="/proyectos">
               Ver todos mis proyectos
             </Badge>
             <Carrousel />
           </Box>
-          <Box w="25%" bg="whiteAlpha.600" m="2" p="8" borderRadius="lg">
+          <Box
+            w={['80%', null, null, null, '25%']}
+            bg="whiteAlpha.600"
+            my="2"
+            p="8"
+            borderRadius="lg"
+            mx="auto"
+          >
             <Image src={aylen} h="15em" mx="auto" borderRadius="10" my="2" />
             <Text>
               Mi nombre es Aylen, soy de argentina, tengo 28 años. Me
@@ -60,7 +71,11 @@ const Home = () => {
       </GridItem>
       <GridItem rowSpan={2} colSpan={2}>
         <Stack textAlign="center">
-          <AspectRatio width="35%" mx="auto" bg="beige">
+          <AspectRatio
+            w={['80%', null, null, null, '45%']}
+            mx="auto"
+            bg="beige"
+          >
             <iframe src="https://lanikyta.github.io/Portfolio/"></iframe>
           </AspectRatio>
           <Heading>Mi primer portfolio</Heading>
