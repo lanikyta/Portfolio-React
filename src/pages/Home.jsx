@@ -32,7 +32,7 @@ const Home = () => {
         bgSize="cover"
         bgPosition="center"
       ></GridItem>
-      <GridItem rowSpan={2} colSpan={2} p="4" w="100vw">
+      <GridItem rowSpan={2} colSpan={2} p="4" w="98vw">
         <Flex
           direction={['column', null, null, null, 'row']}
           justify="center"
